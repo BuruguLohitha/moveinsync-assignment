@@ -1,0 +1,38 @@
+create employe management system;
+use employe management system;
+create table employe(emp_id int primary key,emp_name char(20),emp_pre_attendence  int,emp_salary int);
+desc employe;
+insert into employe values(01,'emp_1',25,15000);
+insert into employe values(02,'emp_2',28,14000);
+insert into employe values(03,'emp_3',15,24000);
+insert into employe values(06,'emp_6',05,6000);
+insert into employe values(05,'emp_5',18,30000);
+
+select * from employe;
+
+Alter table employe add 04,'emp_8',13,16000;
+
+select * from employe;
+
+UPDATE employe //press enter
+SET rmp_name =emp_4  
+   WHERE emp_id=04;
+
+select * from employe;
+
+DELETE from employe
+  WHERE emp_name='emp_6';
+
+select * from employe ORDER BY emp_name;
+
+//ateendene of eaach employe
+select emp_name,emp_pre_attendence  from employe;
+
+//increase salary according to no of work days;
+
+logic to find increase percentage 
+
+emp_salary * percentage of increase
+
+//to display new updated salary
+emp_salary+(emp_salary*percentage of increase) 
